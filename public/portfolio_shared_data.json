@@ -1,0 +1,105 @@
+{
+    "basic_info": {
+      "name": "Kim Thuy Ha",
+      "titles": [ "Full-stack developer", "Mobile App Developer" ],
+      "social": [
+        {
+          "name": "github",
+          "url": "https://github.com/kimthuyha",
+          "class": "fab fa-github"
+        },
+        {
+          "name": "email",
+          "url": "kimthuyhaa@gmail.com",
+          "class": "fa fa-envelope"
+        }
+      ],
+      "image": "myProfile.jpg"
+    },
+    "skills": {
+      "icons": [
+        {
+          "name": "HTML 5",
+          "class": "devicon-html5-plain",
+          "level": "95"
+        },
+        {
+          "name": "CSS 3",
+          "class": "devicon-css3-plain",
+          "level": "95"
+        },
+        {
+          "name": "TypeScript",
+          "class": "devicon-typescript-plain",
+          "level": "90"
+        },
+        {
+          "name": "JavaScript",
+          "class": "devicon-javascript-plain",
+          "level": "70"
+        },
+        {
+          "name": "Sass",
+          "class": "devicon-sass-original",
+          "level": "75"
+        },
+        {
+          "name": "Bootstrap",
+          "class": "devicon-bootstrap-plain",
+          "level": "85"
+        },
+        {
+          "name": "C#",
+          "class": "devicon-csharp-plain",
+          "level": "65"
+        },
+        {
+          "name": "MySql",
+          "class": "devicon-mysql-plain",
+          "level": "60"
+        },
+        {
+          "name": "C#",
+          "class": "devicon-csharp-plain",
+          "level": "65"
+        },
+        {
+          "name": "C++",
+          "class": "devicon-cplusplus-plain",
+          "level": "65"
+        },
+        {
+          "name": "Java",
+          "class": "devicon-java-plain",
+          "level": "65"
+        },
+        {
+          "name": "Python",
+          "class": "devicon-python-plain",
+          "level": "65"
+        },
+        {
+          "name": "Go",
+          "class": "devicon-go-plain",
+          "level": "65"
+        },
+        {
+          "name": "PHP",
+          "class": "devicon-php-plain",
+          "level": "65"
+        }
+        ,
+        {
+          "name": "Xamarin",
+          "class": "devicon-xamarin-plain",
+          "level": "65"
+        },
+        {
+          "name": "Docker",
+          "class": "devicon-docker-plain",
+          "level": "65"
+        }
+
+      ]
+    }
+  }

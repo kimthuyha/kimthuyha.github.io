@@ -4,6 +4,7 @@ import AwesomeSlider from "react-awesome-slider";
 import AwesomeSliderStyles from "../scss/light-slider.scss";
 import AwesomeSliderStyles2 from "../scss/dark-slider.scss";
 import "react-awesome-slider/dist/custom-animations/scale-out-animation.css";
+
 class ProjectDetailsModal extends Component {
   render() {
     if (this.props.data) {
@@ -30,7 +31,7 @@ class ProjectDetailsModal extends Component {
         });
         if (this.props.data.images) {
           var img = images.map((elem, i) => {
-            return <div key={i} data-src={elem} />;
+            return <div key={i} data-src={elem} style={{borderRadius:"1em"}}/>;
           });
         }
       }
@@ -44,34 +45,16 @@ class ProjectDetailsModal extends Component {
         className="modal-inside"
       >
         <span onClick={this.props.onHide} className="modal-close">
-          <i className="fas fa-times fa-3x close-icon"></i>
+          <i class="fas fa-circle-xmark"></i>
+          <i className="fas fa-times fa-2x close-icon"></i>
         </span>
-        <div className="col-md-12">
-          <div className="col-md-10 mx-auto" style={{ paddingBottom: "50px" }}>
-            <div className="slider-tab">
-              <span
-                className="iconify slider-iconfiy"
-                data-icon="emojione:red-circle"
-                data-inline="false"
-                style={{ marginLeft: "5px" }}
-              ></span>{" "}
-              &nbsp;{" "}
-              <span
-                className="iconify slider-iconfiy"
-                data-icon="twemoji:yellow-circle"
-                data-inline="false"
-              ></span>{" "}
-              &nbsp;{" "}
-              <span
-                className="iconify slider-iconfiy"
-                data-icon="twemoji:green-circle"
-                data-inline="false"
-              ></span>
-            </div>
+          
+          <div className="" style={{ paddingBottom: "8em", paddingTop: "1em", marginLeft: "0", marginRight: "0" }}>
             <AwesomeSlider
               cssModule={[AwesomeSliderStyles, AwesomeSliderStyles2]}
               animation="scaleOutAnimation"
               className="slider-image"
+
             >
               {img}
             </AwesomeSlider>
@@ -98,7 +81,6 @@ class ProjectDetailsModal extends Component {
               <ul className="list-inline mx-auto">{tech}</ul>
             </div>
           </div>
-        </div>
       </Modal>
     );
   }

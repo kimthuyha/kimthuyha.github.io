@@ -10,13 +10,13 @@ class Skills extends Component {
             <span>
               <div className="text-center skills-tile">
                 <i className={skills.class} style={{ fontSize: "220%" }}>
-                  <p
+                </i>
+                <h4
                     className="text-center"
-                    style={{ fontSize: "30%", marginTop: "4px" }}
+                    style={{ marginTop: "4px" }}
                   >
                     {skills.name}
-                  </p>
-                </i>
+                  </h4>
               </div>
             </span>
           </li>
@@ -27,14 +27,10 @@ class Skills extends Component {
     return (
       <section id="skills">
         <div className="col-md-12 section-div">
-          <div className="col-md-12">
-            <h1 className="section-title">
-              <span className="text-white">Along with some skills I'm honing</span>
-            </h1>
-          </div>
-          <div className="col-md-12 text-center">
             <ul className="list-inline mx-auto skill-icon">{skills}</ul>
-          </div>
+            <h1 className="section-title">
+              <span>learning new <span className="highlighted">skills</span> and honing my crafts 📖 🔅</span>
+            </h1>
         </div>
       </section>
     );

@@ -21,25 +21,10 @@ class Projects extends Component {
       var sectionName = this.props.resumeBasicInfo.section_name.projects;
       var projects = this.props.resumeProjects.map(function (projects) {
         return (
-          <div
-            className="col-sm-12 col-md-6 col-lg-4 project"
-            key={projects.title}
-            style={{ cursor: "pointer" }}
-          >
-            <div class = "card">
-                    <img src={projects.images[0]} alt="" />
-                    <div class="card-content">
-                    <h2>{projects.title}</h2>
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt exercitationem iste, voluptatum, quia explicabo laboriosam rem adipisci voluptates cumque, veritatis atque nostrum corrupti ipsa asperiores harum? Dicta odio aut hic.
-                    </p>
-                    <a href="#" class="button">
-                        Find out more&nbsp;&nbsp;
-                        <i class="fa fa-arrow-right"></i>
-                    </a>
-                    </div>
-                </div>
-          </div>
+          <Project 
+          title={projects.title} 
+          image={projects.images[0]} 
+          onClick={() => detailsModalShow(projects)}/>
         );
       });
     }
@@ -58,7 +43,6 @@ class Projects extends Component {
             onHide={detailsModalClose}
             data={this.state.deps}
           />
-          <Project />
         </div>
       </section>
     );

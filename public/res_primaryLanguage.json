@@ -16,8 +16,6 @@
         "details": "This is the first web app I did during my second year of college. It was first suggested by my professor about blockchain. Crypto was surely in the limelight, so I checked it out, and the best way to understand it was to use it in something. I came across this tutorial on the internet and dived in the process of making this web app. It was something that prelimary but fundalmental enought for me not to just learn about blockchain, but also web application as well. I learned alot about server, endpoints, and all the html things from this experience. Since this was course extension for my honor experience in a class, the professor wanted to have somekind of documentation on it",
         "cover_image": "images/portfolio/share/p1.png",
         "images": [
-          "images/portfolio/animal-shelter/p1.jpg",
-          "images/portfolio/animal-shelter/p2.jpg"
         ],
         "url": "",
         "technologies": [
@@ -37,8 +35,6 @@
         "details": "",
         "cover_image": "images/portfolio/olis/p1.png",
         "images": [
-          "images/portfolio/olis/p1.png",
-          "images/portfolio/photography/p2.jpg"
         ],
         "url": "https://github.com",
         "technologies": [
@@ -58,8 +54,6 @@
         "details": "",
         "cover_image": "images/portfolio/cuda_hybrid/p1.png",
         "images": [
-          "images/portfolio/adventure/p1.jpg",
-          "images/portfolio/adventure/p2.jpg"
         ],
         "url": "https://cuda-hybrid.github.io/",
         "technologies": [
@@ -83,8 +77,6 @@
         "details": "",
         "cover_image": "images/portfolio/folio_template/p1.png",
         "images": [
-          "images/portfolio/adventure/p1.jpg",
-          "images/portfolio/adventure/p2.jpg"
         ],
         "url": "https://github.com",
         "technologies": [
@@ -100,9 +92,6 @@
         "details": "",
         "cover_image": "images/portfolio/iml/p1.png",
         "images": [
-          "images/portfolio/iml/p1.png",
-          "images/portfolio/iml/p2.png",
-          "images/portfolio/iml/p3.png"
         ],
         "url": "http://iml.cec.miamioh.edu/",
         "technologies": [
@@ -131,7 +120,7 @@
         "company": "Miami University",
         "title": "Bachelor of Science",
         "years": "08.2019 - 05.2023",
-        "description": "Computer Science major with a Math minor. Graduated with a 3.99 GPA (Summa Cum Laude). Presidents' and Dean's List all semester"
+        "description": "Computer Science major with a Math minor. Graduated with Summa Cum Laude."
       },
       {
         "company": "Varis",

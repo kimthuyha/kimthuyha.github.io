@@ -20,23 +20,24 @@ class About extends Component {
         <h1 className="section-title">👋 Nice to meet you!</h1>
         
         <div className="des">
-          <h3>Welcome to my personal website. I first created this page because I want to learn React,  
-            but then I got ambitious and want something more. Tech is a huge part of me, but also are art and crafts, 
-            and I want this page to reflect that dynamics.  For now, it might not be there yet, but it WILL. 
+          <h3>Welcome to my personal website. This is where I showcase my projects as well as my experience.
+            You can find below the list of applicaitions that I have worked on along with some experience that
+            I gained along the way 😊.
           </h3>
           <h3>
-          I like design and play with the front end frameworks to make pretty pages, but for some reasons,
-          I've spent majority of the time doing the backend work, which I also love. That's why this page is a way
-          for me to fill in the gaps that are missing for me to become a full-stack developer 📽️. 
+          To introduce a little bit about myself, I am a recent CS grad and going to work at a tech company upon my gradution.
+          I have mostly worked on back-end projects but am also interested in front-end development 🤓.
+          </h3>
+          <h3>
+          Other than tech, crafts and movie are also big parts of my life. I really hope that I can share those with you here
+          in the future 📽️. 
           </h3>
           <h3>
           What you are seeing now is my portfolio template in use (<a>link</a>),
-          which is inspired by Dorota1997's template. I want the website to represent me 
-          so I rewrote a lot of the parts and added a lot of me factors. If you like this template, 
-          follow the link I mentioned or in the project section and star ⭐ the repository 
-          to make it more recognizable for other users.
+          which used Dorota1997's template as the base, and with a lot of modification, I tried to customize it
+          to make sure the page represents me.
           </h3>
-          <h3>Hope you enjoy 💜</h3>
+          <h3>Hope you enjoy ❤️</h3>
                  
         </div>
       </section>

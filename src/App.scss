@@ -182,22 +182,25 @@ header img {
 
 	img {
 		position: absolute;
-		object-fit: cover;
+		object-fit: fill;
 		width: 100%;
 		height: 100%;
 		top: 0;
 		left: 0;
 		transition: opacity .2s ease-out;
+		opacity: 90;
 	}
 
 	h2 {
 		position: absolute;
-		inset: auto auto 30px 30px;
+		inset: auto auto 15px 15px;
 		margin: 0;
 		transition: inset .3s .3s ease-out;
 		text-transform: uppercase;
-		color: white;
+		color: $text-color;
+		padding: 0.2em;
 		font-weight: 600;
+		display: none;
 	}
 
 	p, a {
@@ -205,12 +208,12 @@ header img {
 		opacity: 0;
 		max-width: 80%;
 		transition: opacity .3s ease-out;
-		font-size: 130%;
+		font-size: 160%;
 		font-weight: bolder;
 	}
 
 	p {
-		inset: auto auto 80px 30px;
+		inset: 100px auto 80px 30px;
 	}
 
 	a {
@@ -227,6 +230,7 @@ header img {
 		inset: auto auto 220px 30px;
 		transition: inset .3s ease-out;
 		color: $text-color;
+		display: block;
 	}
 
 	&:hover p, &:hover a {
@@ -264,21 +268,18 @@ header img {
 	color: white;
 	margin: 2em;
 	text-align: center;
-	font-size: 2rem;
 	font-weight: 400;
 }
 
 .highlighted {
-	font-size: 120%;
 	font-style: normal;
     position: relative;
     display: inline;
     box-decoration-break: clone;
     padding: 0.1em 0.2em;
     border-radius: 0.2em;
-    background: hsl(hue($base-color), 90%, 40%);
+    background: hsl(hue($base-color), 50%, 40%);
 	font-weight: 600;
-	font-family: 'Courier New', Courier, monospace;
 }
 .skills-tile {
 	
@@ -303,19 +304,19 @@ header img {
 #experience {
 	background-color: $secondary-color;
 	h1 {
-		text-transform: lowercase;
+		text-transform: uppercase;
 		padding-bottom: 1em;
 		font-size: 3rem;
 	}
 	.butter {
-		font-size: 4rem;
-		font-weight: 600;
-		text-transform: uppercase;
-		text-shadow: -15px 5px 20px #ced0d3;
-		letter-spacing: 0.02em;
-		padding-bottom: 1rem;
-		text-shadow: 2px 2px 0px hsl(hue($secondary-color), 60%, 92%), 
-			4px 4px 0px  hsl(hue($base-color), 90%, 40%),
+		background-image: linear-gradient(8deg, $text-color 60%, hsl(hue($base-color), 50%, 40%) 0);
+		background-clip: text;
+		background-color: $text-color;
+		color: $secondary_color;
+		-webkit-text-stroke-color: transparent;
+		-webkit-text-stroke-width: 0.15em;
+		font-weight: 500;
+		letter-spacing: 0.2em;
 	}
 
 	.experience-item {
@@ -327,13 +328,12 @@ header img {
 			font-weight: 300;
 		}
 		.company {
-			font-weight: 600;
+			font-weight: 500;
 		}
 		.title {
 			font-weight: 400;
 		}
 		.description {
-			font-size: 1.75rem;
 			font-weight: 300;
 		}
 	}
@@ -344,7 +344,7 @@ header img {
 */
 
 .modal-inside .modal-content {
-	background: hsl(hue($secondary-color), 60%, 92%);
+	background: $off-white;
 	padding: 1em;
 	border-radius: 1em;
 	width: 100rem;
@@ -362,6 +362,24 @@ header img {
 	text-shadow: 2px 2px 0px hsl(hue($secondary-color), 70%, 75%);
 	padding: 0.5em;
 }
+
+.aws-btn {
+
+	--slider-height-percentage: 60%;
+	--slider-transition-duration: 500ms;
+	--organic-arrow-thickness: 5px;
+	--organic-arrow-border-radius: 10px;
+	--organic-arrow-height: 31px;
+	--organic-arrow-color: #000000;
+	--control-button-width: 5%;
+	--control-button-height: 35%;
+	--control-button-background: transparent;
+	--control-bullet-color: #333333;
+	--control-bullet-active-color: #333333;
+	--loader-bar-color: #ffffff;
+	--loader-bar-height: 5px;
+}
+
 
 @supports (-webkit-background-clip: text) {
 	h1 {
@@ -547,13 +565,13 @@ header img {
 }
 
 footer {
-	background: $base-color;
+	background: $text-color;
 	min-height: 100px;
 	width: 100%;
 	overflow: hidden;
 	font-size: 2rem;
 	font-weight: bold;
-	color: $text-color;
+	color: $off-white;
 	position: relative;
 	text-align: center;
 }

@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import { Modal } from "react-bootstrap";
 import AwesomeSlider from "react-awesome-slider";
-import AwesomeSliderStyles from "../scss/light-slider.scss";
-import AwesomeSliderStyles2 from "../scss/dark-slider.scss";
 import "react-awesome-slider/dist/custom-animations/scale-out-animation.css";
 
 class ProjectDetailsModal extends Component {
@@ -51,7 +49,6 @@ class ProjectDetailsModal extends Component {
           
           <div className="" style={{ paddingBottom: "8em", paddingTop: "1em", marginLeft: "0", marginRight: "0" }}>
             <AwesomeSlider
-              cssModule={[AwesomeSliderStyles, AwesomeSliderStyles2]}
               animation="scaleOutAnimation"
               className="slider-image"
 
@@ -76,7 +73,7 @@ class ProjectDetailsModal extends Component {
                 </a>
               ) : null}
             </h3>
-            <p className="modal-description">{description}</p>
+            <p className="modal-description">{this.props.data.details}</p>
             <div className="col-md-12 text-center">
               <ul className="list-inline mx-auto">{tech}</ul>
             </div>

@@ -18,12 +18,12 @@ class Projects extends Component {
 
     let detailsModalClose = () => this.setState({ detailsModalShow: false });
     if (this.props.resumeProjects && this.props.resumeBasicInfo) {
-      var sectionName = this.props.resumeBasicInfo.section_name.projects;
       var projects = this.props.resumeProjects.map(function (projects) {
         return (
           <Project 
           title={projects.title} 
-          image={projects.images[0]} 
+          image={projects.cover_image} 
+          description = {projects.description}
           onClick={() => detailsModalShow(projects)}/>
         );
       });

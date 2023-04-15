@@ -29,7 +29,7 @@ class Skills extends Component {
         <div className="col-md-12 section-div">
             <ul className="list-inline mx-auto skill-icon">{skills}</ul>
             <h1 className="section-title">
-              <span>learning new <span className="highlighted">skills</span> and honing my crafts 📖 🔅</span>
+              <span><span className="highlighted">Technologies</span> that I've used 📖 🔅</span>
             </h1>
         </div>
       </section>

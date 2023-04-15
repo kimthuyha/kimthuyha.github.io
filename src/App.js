@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import $ from "jquery";
 import "./App.scss";
-import Header from "./components/Header";
+import Home from "./components/Home";
 import Footer from "./components/Footer";
 import About from "./components/About";
 import Experience from "./components/Experience";
@@ -19,16 +19,6 @@ class App extends Component {
       resumeData: {},
       sharedData: {},
     };
-  }
-
-  applyPickedLanguage(pickedLanguage, oppositeLangIconId) {
-    this.swapCurrentlyActiveLanguage(oppositeLangIconId);
-    document.documentElement.lang = pickedLanguage;
-    var resumePath =
-      document.documentElement.lang === window.$primaryLanguage
-        ? `res_primaryLanguage.json`
-        : `res_secondaryLanguage.json`;
-    this.loadResumeFromPath(resumePath);
   }
 
   componentDidMount() {
@@ -71,7 +61,7 @@ class App extends Component {
     return (
       <div>
         <Navbar />
-        <Header sharedData={this.state.sharedData.basic_info} />
+        <Home sharedData={this.state.sharedData.basic_info} />
         <About
           resumeBasicInfo={this.state.resumeData.basic_info}
           sharedBasicInfo={this.state.sharedData.basic_info}
@@ -80,12 +70,12 @@ class App extends Component {
           resumeProjects={this.state.resumeData.projects}
           resumeBasicInfo={this.state.resumeData.basic_info}
         />
-        <Skills
-          sharedSkills={this.state.sharedData.skills}
-          resumeBasicInfo={this.state.resumeData.basic_info}
-        />
         <Experience
           resumeExperience={this.state.resumeData.experience}
+          resumeBasicInfo={this.state.resumeData.basic_info}
+        />
+        <Skills
+          sharedSkills={this.state.sharedData.skills}
           resumeBasicInfo={this.state.resumeData.basic_info}
         />
         <Footer sharedBasicInfo={this.state.sharedData.basic_info} />

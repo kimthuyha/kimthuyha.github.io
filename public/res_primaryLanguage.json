@@ -1,7 +1,7 @@
 {
     "basic_info": {
       "description_header": "Hi",
-      "description": "👋 I'm Davina Griss. Fictional person for preview purposes :) I'm working with newest front-end frameworks like Angular, React and Vue. What you are seeing now is portfolio template from Dorota1997. If you like this portfolio template, make sure to ⭐ the repository to make it more recognizable for other users. Thank you 💜",
+      "description": "Welcome to my personal website. To tell you a little about this page, I created this with the thought that this would only be a portfolio :). But then I realized, resume and github can do all of that, and so this page should be something more and show myself under different lights. It will. But for the intial release, it will be a pretty webpage for my techie side. I love coding and working the niche software, but I also like art, drawing, designing, and doing crafts. These are all the things that make me who I am and  to show people I'm working with newest front-end and back-end frameworks and enjoy doing crafts in my free time. What you are seeing now is my portfolio template in use, which inspired by Dorota1997's template. I want the website to represent me with all the cool effects so I went and rewrote a lot of the part with the If you like this portfolio template, make sure to ⭐ the repository to make it more recognizable for other users. Thank you 💜",
       "section_name": {
         "about": "About me",
         "projects": "Projects",
@@ -11,9 +11,10 @@
     },
     "projects": [
       {
-        "title": "Animal Shelter",
-        "startDate": "2020",
-        "description": "The most expanded application I had opportunity to work with. I've learned many technologies and my code was reviewed by awesome curator. Application handles all adoption processess and allows to store all evidence on adopting animals from animal shelter.sssssssssssssssssssssss",
+        "title": "Share",
+        "description": "A simple web application that implemented blockchain on the backed for message sharing using Python and Flask",
+        "details": "This is the first web app I did during my second year of college. It was first suggested by my professor about blockchain. Crypto was surely in the limelight, so I checked it out, and the best way to understand it was to use it in something. I came across this tutorial on the internet and dived in the process of making this web app. It was something that prelimary but fundalmental enought for me not to just learn about blockchain, but also web application as well. I learned alot about server, endpoints, and all the html things from this experience. Since this was course extension for my honor experience in a class, the professor wanted to have somekind of documentation on it",
+        "cover_image": "images/portfolio/share/p1.png",
         "images": [
           "images/portfolio/animal-shelter/p1.jpg",
           "images/portfolio/animal-shelter/p2.jpg"
@@ -21,84 +22,106 @@
         "url": "",
         "technologies": [
           {
-            "class": "devicon-angularjs-plain",
-            "name": "Angular"
+            "class": "devicon-python-plain",
+            "name": "Python"
           },
           {
-            "class": "devicon-typescript-plain",
-            "name": "TypeScript"
-          },
-          {
-            "class": "devicon-csharp-plain",
-            "name": "C#"
+            "class": "devicon-flask-plain",
+            "name": "Flask"
           }
         ]
       },
       {
-        "title": "Photography",
-        "startDate": "2018",
-        "description": "Personal project for study subject. I was responsible for testing photography application that optimizes images with popular algorithms used by graphic editors like Pixlr or Adobe Photoshop. I've earned A grade :)",
+        "title": "Olis",
+        "description": "A mobile application (iOS) for homecooks written in C# and Xamarin, which can save the information about recipe and calculate the nutrients per serving",
+        "details": "",
+        "cover_image": "images/portfolio/olis/p1.png",
         "images": [
-          "images/portfolio/photography/p1.jpg",
+          "images/portfolio/olis/p1.png",
           "images/portfolio/photography/p2.jpg"
         ],
         "url": "https://github.com",
         "technologies": [
           {
-            "class": "devicon-react-original",
+            "class": "devicon-csharp-plain",
+            "name": "C#"
+          },
+          {
+            "class": "devicon-xamarin-plain",
+            "name": "Xamarin"
+          }
+        ]
+      },
+      {
+        "title": "cuda-hybrid",
+        "description": "A python library using CUDA programming to accelerate the computation process for ABM/FCM model",
+        "details": "",
+        "cover_image": "images/portfolio/cuda_hybrid/p1.png",
+        "images": [
+          "images/portfolio/adventure/p1.jpg",
+          "images/portfolio/adventure/p2.jpg"
+        ],
+        "url": "https://cuda-hybrid.github.io/",
+        "technologies": [
+          {
+            "class": "devicon-angularjs-plain",
+            "name": "Angular"
+          },
+          {
+            "class": "devicon-typescript-plain",
+            "name": "TypeScript"
+          },
+          {
+            "class": "devicon-csharp-plain",
+            "name": "C#"
+          }
+        ]
+      },
+      {
+        "title": "folio_template",
+        "description": "A react package/template to help people to showcase their work",
+        "details": "",
+        "cover_image": "images/portfolio/folio_template/p1.png",
+        "images": [
+          "images/portfolio/adventure/p1.jpg",
+          "images/portfolio/adventure/p2.jpg"
+        ],
+        "url": "https://github.com",
+        "technologies": [
+          {
+            "class": "devicon-react-plain",
             "name": "React"
+          }
+        ]
+      },
+      {
+        "title": "IML",
+        "description": "A web application written in php that will aid the process of learning and teaching IML modeling",
+        "details": "",
+        "cover_image": "images/portfolio/iml/p1.png",
+        "images": [
+          "images/portfolio/iml/p1.png",
+          "images/portfolio/iml/p2.png",
+          "images/portfolio/iml/p3.png"
+        ],
+        "url": "http://iml.cec.miamioh.edu/",
+        "technologies": [
+          {
+            "class": "devicon-php-plain",
+            "name": "PHP"
           },
           {
             "class": "devicon-javascript-plain",
-            "name": "JavaScript"
+            "name": "JS"
           }
-        ]
-      },
-      {
-        "title": "3D Object Viewer",
-        "startDate": "2015",
-        "description": "One of the first apps I was working on my internship. I had to develop front-end implementation for app that shows 3D models of known buildings. This was also my first project in Angular framework. I've learned a lot!",
-        "images": [
-          "images/portfolio/adventure/p1.jpg",
-          "images/portfolio/adventure/p2.jpg"
-        ],
-        "url": "https://github.com",
-        "technologies": [
+          ,
           {
-            "class": "devicon-angularjs-plain",
-            "name": "Angular"
+            "class": "devicon-html-plain",
+            "name": "HTML"
           },
           {
-            "class": "devicon-typescript-plain",
-            "name": "TypeScript"
-          },
-          {
-            "class": "devicon-csharp-plain",
-            "name": "C#"
-          }
-        ]
-      },
-      {
-        "title": "3D Object Viewer",
-        "startDate": "2015",
-        "description": "One of the first apps I was working on my internship. I had to develop front-end implementation for app that shows 3D models of known buildings. This was also my first project in Angular framework. I've learned a lot!",
-        "images": [
-          "images/portfolio/adventure/p1.jpg",
-          "images/portfolio/adventure/p2.jpg"
-        ],
-        "url": "https://github.com",
-        "technologies": [
-          {
-            "class": "devicon-angularjs-plain",
-            "name": "Angular"
-          },
-          {
-            "class": "devicon-typescript-plain",
-            "name": "TypeScript"
-          },
-          {
-            "class": "devicon-csharp-plain",
-            "name": "C#"
+            "class": "devicon-css-plain",
+            "name": "CSS"
           }
         ]
       }
@@ -108,19 +131,37 @@
         "company": "Miami University",
         "title": "Bachelor of Science",
         "years": "08.2019 - 05.2023",
-        "description": "Computer Science major with a Math minor. Graduated with Summa Cum Laude"
+        "description": "Computer Science major with a Math minor. Graduated with a 3.99 GPA (Summa Cum Laude). Presidents' and Dean's List all semester"
       },
       {
         "company": "Varis",
         "title": "SDE Intern",
         "years": "05.2022 - 08.2022",
-        "description": "Computer Science major with a Math minor. Graduated with Summa Cum Laude"
+        "description": "Joined the team as a backed-end intern working on API and micro-services"
+      },
+      {
+        "company": "DACH Lab",
+        "title": "Research Assistant",
+        "years": "01.2022 - 05.2022",
+        "description": "Worked with a gradudate student to develop a library for ABM/FCM model on CUDA cores"
+      },
+      {
+        "company": "Miami IT Department",
+        "title": "SD Intern",
+        "years": "09.2021 - 05.2022",
+        "description": "Worked on web applications for the school"
       },
       {
         "company": "Miami University",
-        "title": "Bachelor of Science",
-        "years": "08.2019 - 05.2023",
-        "description": "Computer Science major with a Math minor. Graduated with Summa Cum Laude"
+        "title": "TA/Tutor",
+        "years": "09.2021 - 05.2022",
+        "description": "Tutored students in Math and Computer Science. TA'ed several CS classes."
+      },
+      {
+        "company": "AccessMU",
+        "title": "Student Worker",
+        "years": "09.2021 - 05.2022",
+        "description": "Trained students on using different tools to assist their studying and made sure Miami's products were acessible"
       }
       
     ]

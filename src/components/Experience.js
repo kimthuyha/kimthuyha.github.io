@@ -65,7 +65,7 @@ class Experience extends Component {
     return (
       <section id="experience" className="section-div">
         <h1 className="section-title">
-            <span className="butter">Experience</span>
+            <span className="butter">Experience</span> that I've got
         </h1>
           {work}
       </section>

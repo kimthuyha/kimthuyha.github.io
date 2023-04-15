@@ -5,7 +5,7 @@ import cover from "../img/cover2.svg";
 import logo from "../img/logo(2).png";
 import $ from "jquery";
 
-class Header extends Component {
+class Home extends Component {
   titles = [];
 
   constructor() {
@@ -43,9 +43,9 @@ class Header extends Component {
                 <h2>You can call me <span className="wavy-underlined">Kim</span>.</h2>
                 <br/>
                 <h2>I'm an aspiring <em>full-stack developer</em></h2>
-                <h2>with a knack for art, designing, and craft</h2>
+                <h2>with a knack for art and crafts</h2>
                 <br/>
-                <a><h4><b>Read more</b></h4></a>
+                <a href="kimthuyhaa@gmail.com"><h4><b>kimthuyhaa@gmail.com</b></h4></a>
               </div>
           </div>
         </div>
@@ -54,4 +54,4 @@ class Header extends Component {
   }
 }
 
-export default Header;
+export default Home;

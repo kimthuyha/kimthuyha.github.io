@@ -1,10 +1,5 @@
 import React, { Component } from "react";
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import Badge from "react-bootstrap/Badge";
 
 class Experience extends Component {
   render() {
@@ -65,7 +60,7 @@ class Experience extends Component {
     return (
       <section id="experience" className="section-div">
         <h1 className="section-title">
-            <span className="butter">Experience</span> that I've got
+            My <span className="butter">stories</span>
         </h1>
           {work}
       </section>

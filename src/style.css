@@ -4,6 +4,10 @@
   NAVBAR
   */
 
+  .hide {
+    transition: all .5s ease-in-out;
+    display: none;
+  }
   .navbar-b {
     transition: all .5s ease-in-out;
     background-color: transparent;

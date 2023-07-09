@@ -1,40 +1,78 @@
-import React, { Component  } from "react";
-import cover from "../img/cover.jpg"
+import React from "react";
+import gif from "../img/Olis.gif";
 
-class Project extends Component {
-    constructor() {
-        super();
-    }
-    render() {
-        return (
-            <div
-            className="col-sm-12 col-md-6 col-lg-4 project"
-            style={{ cursor: "pointer" }}>
-                <div class = "card" onClick={this.props.onClick}>
-                    <img src={this.props.image} alt=""/>
-                    <div class="card-content">
-                        <h2>{this.props.title}</h2>
-                        <p>
-                            {this.props.description}
-                        </p>
-                        <a onClick={this.props.onClick} class="button">
-                            More&nbsp;&nbsp;
-                            <i class="fa fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-          </div>
-            // <div className="project">
-            //     <div class="post" href="#">
-            //         <h2 class="post-title">Olis</h2>
-            //         <h3 class="post-description">A mobile app for homecooks</h3>
-                    
-	        //     </div>
-                
-            // </div>
-            
-        );
-    }
+function TechIcon({iconName, name}) {
+    var fullName = iconName + " text-center";
+    return (
+        <div className="text-center tech-icon">
+            <i className={fullName} style={{ fontSize: "200%" }}></i>
+            <p className="text-center">{name}</p>
+        </div>
+
+    );
 }
 
+function Project(props) {
+    var techStack = props.techs.map(function (tech, i) {
+        const name = tech.name;
+        const iconName = tech.iconName;
+
+        return (
+            <TechIcon name={name} iconName={iconName}/>
+        );
+    });
+    return (
+    <div class="project-card" style={{height:props.height, width:props.width}}>
+        <div class="innerCard">
+            <div class="frontSide">
+                <img src={props.image} class="project-img"></img>
+            </div>
+            <div class="backSide">
+                <p class="project-title">{props.title}</p>
+                
+                <div style={{display:"flex", alignItems: "center"}}>
+                    {techStack}
+                </div>
+                <p class="project-body">{props.description}</p>
+                <a href={props.url} target="_blank" class="project-body">
+                    Learn more
+                </a>
+                
+            </div>
+        </div>
+    </div>
+
+    );
+}
+
+function Project2() {
+    return (
+    <div class="project-card" style={{width:"43em", height:"24em"}}>
+        <div class="innerCard">
+            <div class="frontSide">
+                <img src={gif} class="project-img"></img>
+            </div>
+            <div class="backSide">
+                <p class="project-title">Olis</p>
+                
+                <div style={{display:"flex", alignItems: "center"}}>
+                    <TechIcon name="Xamarin" iconName="devicon-xamarin-plain" />
+                    <TechIcon name="C#" iconName="devicon-xamarin-plain" />
+                </div>
+                <p class="project-body">
+                    This is a mobile app for homecooks. You can enter the ingredients and 
+                    instructions and the app will gather the information, send it to an API,
+                    and receive back the nutrition information, which is organized into 
+                    a nutrition lable.
+                </p>
+                <a href="https://github.com/kimthuyha/Olis" target="_blank" class="project-body">
+                    Learn more
+                </a>
+                
+            </div>
+        </div>
+    </div>
+
+    );
+}
 export default Project;

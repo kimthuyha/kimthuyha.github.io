@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import $ from "jquery";
-import "./App.scss";
+import "./scss/App.scss";
 import Home from "./components/Home";
 import Footer from "./components/Footer";
 import About from "./components/About";
@@ -8,6 +8,7 @@ import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Navbar from "./components/Navbar";
+
 import "./style.css"
 
 class App extends Component {
@@ -60,17 +61,12 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Navbar />
+        {/* <Navbar /> */}
+        
         <Home sharedData={this.state.sharedData.basic_info} />
-        <About
-          resumeBasicInfo={this.state.resumeData.basic_info}
-          sharedBasicInfo={this.state.sharedData.basic_info}
-        />
-        <Projects
-          resumeProjects={this.state.resumeData.projects}
-          resumeBasicInfo={this.state.resumeData.basic_info}
-        />
-        <Experience
+        <Projects/>
+        
+        {/* <Experience
           resumeExperience={this.state.resumeData.experience}
           resumeBasicInfo={this.state.resumeData.basic_info}
         />
@@ -78,7 +74,7 @@ class App extends Component {
           sharedSkills={this.state.sharedData.skills}
           resumeBasicInfo={this.state.resumeData.basic_info}
         />
-        <Footer sharedBasicInfo={this.state.sharedData.basic_info} />
+        <Footer sharedBasicInfo={this.state.sharedData.basic_info} /> */}
       </div>
     );
   }
